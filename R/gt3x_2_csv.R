@@ -165,9 +165,9 @@ save_accel <- function(acc.file, outdir = NULL, verbose = FALSE){
                         imputeZeroes = TRUE) %>%
                 # Here, we drop the 'timestamp' column:
                 as.data.table(.[, -4]) %>%
-                transmute(`Accelerometer X` = Y %>% as.character,
-                          `Accelerometer Y` = X %>% as.character,
-                          `Accelerometer Z` = Z %>% as.character)
+                transmute(`Accelerometer X` = Y %>% as.double,
+                          `Accelerometer Y` = X %>% as.double,
+                          `Accelerometer Z` = Z %>% as.double)
 
   # Writing acceleration data in csv:
   if(verbose){
