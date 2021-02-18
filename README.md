@@ -5,10 +5,10 @@
 ## Installation
 
 ``` r
-# Install from CRAN (when available)
-install.packages("gt3x2csv")
-# Or the development version from GitHub
-# install.packages("devtools")
+# Installs the development version from GitHub:
+
+install.packages("devtools")
+
 devtools::install_github("danilodpsantos/gt3x2csv")
 ```
 
